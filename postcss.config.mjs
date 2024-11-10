@@ -3,9 +3,7 @@ const config = {
 	plugins: {
 		tailwindcss: {},
 		autoprefixer: {},
-		styleLint: {
-			configFile: "./.stylelintrc.json",
-		},
+		styleLint: {},
 	},
 }
 
