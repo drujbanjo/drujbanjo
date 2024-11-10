@@ -1,0 +1,72 @@
+.home {
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	width: 100%;
+}
+
+.masthead {
+	margin: 10rem 0;
+	text-align: center;
+
+	--title-color: rgb(var(--foreground)), rgb(var(--secondary-foreground));
+	--description-max-width: 48rem;
+}
+
+.masthead_title {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 1.2;
+	margin-bottom: 3rem;
+	color: transparent;
+	background-clip: text;
+	background-image: linear-gradient(var(--title-color));
+}
+
+.masthead_title_code {
+	color: rgb(var(--primary)) !important;
+}
+
+.masthead_description {
+	font-size: 1.25rem;
+	line-height: 1.8;
+	margin-bottom: 2rem;
+	color: rgb(var(--secondary-foreground));
+	max-width: var(--description-max-width);
+	margin-inline: auto;
+}
+
+.masthead_description_bold {
+	color: rgb(var(--foreground));
+	font-weight: 500;
+}
+
+.masthead_buttons_group {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.projects {
+	margin-block: 5rem;
+}
+
+.projects_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.projects_title {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 800;
+	margin-bottom: 2rem;
+}
+
+.projects_grid {
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 1rem;
+}

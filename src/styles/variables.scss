@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	// colors for light mode
+	:root {
+		--background: 255 255 255;
+		--foreground: 7 7 8;
+		--card: 255 255 255;
+		--card-foreground: 7 7 8;
+		--popover: 255 255 255;
+		--popover-foreground: 7 7 8;
+		--primary: 193 194 194;
+		--primary-foreground: 255 255 255;
+		--secondary: 20 20 21;
+		--secondary-foreground: 22 22 24;
+		--muted: 20 20 21;
+		--muted-foreground: 20 20 21;
+		--accent: 20 20 21;
+		--accent-foreground: 22 22 24;
+		--destructive: 9 1 1;
+		--destructive-foreground: 250 250 250;
+		--border: 22 22 24;
+		--input: 22 22 24;
+		--ring: 193 194 194;
+		--radius: 0.5rem;
+		--chart-1: 231 110 80;
+		--chart-2: 42 157 144;
+		--chart-3: 39 71 84;
+		--chart-4: 232 196 104;
+		--chart-5: 244 164 98;
+	}
+
+	// colors for dark mode
+	.dark {
+		--background: 8 8 9;
+		--foreground: 242 242 242;
+		--card: 10 10 10;
+		--card-foreground: 242 242 242;
+		--popover: 8 8 9;
+		--popover-foreground: 242 242 242;
+		--primary: 34, 195, 93;
+		--primary-foreground: 242 242 242;
+		--secondary: 17 17 18;
+		--secondary-foreground: 129 129 129;
+		--muted: 38 38 38;
+		--muted-foreground: 159 159 168;
+		--accent: 17 17 18;
+		--accent-foreground: 250 250 250;
+		--destructive: 33 8 8;
+		--destructive-foreground: 33 3 3;
+		--border: 38 38 38;
+		--input: 38 38 38;
+		--ring: 178 184 180;
+		--chart-1: 38 98 217;
+		--chart-2: 46 184 138;
+		--chart-3: 232 140 48;
+		--chart-4: 175 87 219;
+		--chart-5: 226 54 112;
+	}
+}
+
+// spaces and sizes
+:root {
+	--container-max-width: 80rem;
+	--container-large-max-width: 96rem;
+}
