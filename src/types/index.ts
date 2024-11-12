@@ -1,3 +1,4 @@
+import { ProvidersProps } from "./providers.props"
 import {
 	UseBrowserTagsStoreProps,
 	UseBrowserTagsStoreType,
@@ -15,4 +16,5 @@ export type {
 	ProjectsType,
 	UseBrowserTagsStoreProps,
 	UseBrowserTagsStoreType,
+	ProvidersProps,
 }
