@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Header } from "@/components"
+import { Providers } from "@/providers"
 
 export const metadata: Metadata = {
 	title: "Drugbans Projects",
@@ -14,7 +15,7 @@ export default function RootLayout({
 	return (
 		<>
 			<Header />
-			{children}
+			<Providers>{children}</Providers>
 		</>
 	)
 }

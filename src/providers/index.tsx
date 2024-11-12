@@ -1,3 +1,5 @@
+'use client'
+
 import { queryClient } from '@/lib'
 import { ProvidersProps } from '@/types'
 import { QueryClientProvider } from '@tanstack/react-query'

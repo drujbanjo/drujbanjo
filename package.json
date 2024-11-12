@@ -9,8 +9,7 @@
 		"eslint": "bun next lint",
 		"prettier": "prettier --write .",
 		"stylelint": "bun x stylelint \"**/*.{css,scss}\" --fix",
-		"format": "bun run eslint && bun run stylelint && bun run prettier",
-		"git:push": "git -u origin push"
+		"format": "bun run eslint && bun run stylelint && bun run prettier"
 	},
 	"dependencies": {
 		"@radix-ui/react-dialog": "^1.1.2",
