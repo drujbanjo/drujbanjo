@@ -151,7 +151,9 @@ export const BrowserTags: FC = () => {
 			))}
 			{data.length <= 7 ? (
 				<li className={styles.tag}>
-					<BrowserTagToggle />
+					<div className={styles.tag_link}>
+						<BrowserTagToggle />
+					</div>
 				</li>
 			) : null}
 		</ul>

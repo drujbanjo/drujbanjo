@@ -59,8 +59,6 @@
 	position: relative;
 	border-radius: var(--radius);
 	background: transparent !important;
-	transition: background 0.2s;
-	padding: 1.25rem 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -68,10 +66,7 @@
 	height: 100%;
 	gap: 0 !important;
 	cursor: pointer;
-
-	&:hover {
-		background: rgb(var(--muted-foreground) / 40%) !important;
-	}
+	padding: 0 !important;
 }
 
 .tag_toggle_button {

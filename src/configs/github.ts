@@ -1,4 +1,4 @@
-export class GithubConfig {
+class GithubConfig {
 	readonly githubAccount = "https://github.com/drujbanjo"
 	readonly githubUserName = "drujbanjo"
 	readonly repositoryUrl = "https://github.com/drujbanjo/drujbanjo"

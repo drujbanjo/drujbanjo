@@ -13,7 +13,7 @@ import {
 	navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { headerMenu } from "@/constants"
-import { githubConfig } from '@/configs'
+import { githubConfig } from "@/configs"
 import { cn } from "@/lib"
 import Image from "next/image"
 import { HeaderProps } from "./header.props"
@@ -26,7 +26,9 @@ export const Header: FC<HeaderProps> = ({ className }) => {
 			<Container large className={styles.container}>
 				<div className={styles.logo}>
 					<Link href={pagesConfig.home} className={styles.logo_link}>
-						<h3 className={styles.logo_label}>Drugban&apos;s Projects</h3>
+						<h3 className={styles.logo_label}>
+							{githubConfig.githubUserName}&apos;s Projects
+						</h3>
 					</Link>
 				</div>
 				<nav className={styles.nav}>
