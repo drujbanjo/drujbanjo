@@ -1,5 +1,6 @@
 {
 	"extends": ["next/core-web-vitals", "next/typescript"],
+	"plugins": ["@tanstack/eslint-plugin-query"],
 	"rules": {
 		"@next/next/no-img-element": "off",
 		"newline-before-return": "error"

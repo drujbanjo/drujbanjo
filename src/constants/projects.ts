@@ -1,4 +1,4 @@
-import { githubConfig } from '@/configs'
+import { githubConfig } from "@/configs"
 import { ProjectsType } from "@/types"
 
 export const projects: ProjectsType[] = [

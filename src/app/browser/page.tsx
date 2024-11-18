@@ -1,10 +1,4 @@
-import {
-	BrowserSearch,
-	BrowserTags,
-	BrowserTime,
-	Button,
-	Container,
-} from "@/components"
+import { BrowserSearch, BrowserTags, Button, Container } from "@/components"
 import styles from "./page.module.scss"
 import { FC } from "react"
 import Link from "next/link"
@@ -19,7 +13,6 @@ const BrowserPage: FC = () => {
 		<div className={styles.wrap}>
 			<Container className={styles.container}>
 				<div className={styles.content}>
-					<BrowserTime />
 					<BrowserSearch />
 					<BrowserTags />
 				</div>
