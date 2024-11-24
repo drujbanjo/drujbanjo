@@ -4,7 +4,7 @@ import { browserSearchConfig } from "@/configs"
 import { useBrowserSearchStore, useBrowserTagsStore } from "@/hooks"
 import { cn, jetbrains_mono } from "@/lib"
 import { FC, FormEvent, useEffect, useRef, useState } from "react"
-import { BiMenu, BiLogoGoogle as GoogleLogo } from "react-icons/bi"
+import { BiLogoGoogle as GoogleLogo, BiMenu } from "react-icons/bi"
 import styles from "./browser.module.scss"
 import {
 	Button,
@@ -16,6 +16,7 @@ import {
 import { PlusIcon, Trash } from "lucide-react"
 import { Github, Youtube } from "@/assets"
 import Image, { StaticImageData } from "next/image"
+
 export const BrowserSearch: FC = () => {
 	const { value, setValue } = useBrowserSearchStore()
 	const inputRef = useRef<HTMLInputElement>(null)
