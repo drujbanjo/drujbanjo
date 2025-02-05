@@ -1,0 +1,17 @@
+Файлы/Папки:
+  - "camelCase"
+
+Images:
+  - "kebab-case"
+
+Css:
+  - "snake_case"
+
+CssVariables:
+  - "kebab-case"
+
+Js/Ts:
+  - "camelCase"
+
+Constants:
+  - "SCREAMING_SNAKE_CASE"

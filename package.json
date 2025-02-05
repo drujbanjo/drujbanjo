@@ -1,0 +1,23 @@
+{
+	"name": "drujbanjo",
+	"version": "0.0.2",
+	"description": "",
+	"private": true,
+	"scripts": {
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,scss,sass,md,mdx,json}\"",
+		"dev": "concurrently --kill-others \"bun run --cwd ./server start\" \"bun run --cwd ./client dev\"",
+		"build": "concurrently --kill-others \"bun run --cwd ./server build\" \"bun run --cwd ./client build\"",
+		"start": "concurrently --kill-others \"bun run --cwd ./server start\" \"bun run --cwd ./client start\"",
+		"lint": "concurrently --kill-others \"bun run --cwd ./server lint\" \"bun run --cwd ./client eslint\" "
+	},
+	"dependencies": {
+		"@react-spring/web": "^9.7.5",
+		"@types/bun": "^1.1.16"
+	},
+	"devDependencies": {
+		"concurrently": "^9.1.2",
+		"prettier": "^3.4.2",
+		"typescript": "^5.5.3"
+	},
+	"packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

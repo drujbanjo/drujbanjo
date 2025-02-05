@@ -1,0 +1,41 @@
+.home {
+	--masthead-max-width: 70rem;
+	--masthead-padding-block: 8rem;
+	--masthead-title-font-size: 4rem;
+	--buttons-group-margin-block: 2rem 0;
+	--buttons-group-gap: 1rem;
+	--projects-list-columns: repeat(3, 1fr);
+	--projects-list-gap: 2rem;
+	--projects-button-margin-block: 2rem;
+}
+
+.masthead {
+	padding-block: var(--masthead-padding-block);
+}
+
+.masthead_title {
+	font-size: var(--masthead-title-font-size);
+	max-width: var(--masthead-max-width);
+	line-height: 1;
+}
+
+.buttons_group {
+	display: flex;
+	align-items: center;
+	gap: var(--buttons-group-gap);
+	margin-block: var(--buttons-group-margin-block);
+}
+
+.description {
+	max-width: var(--masthead-max-width);
+}
+
+.projects_list {
+	display: grid;
+	grid-template-columns: var(--projects-list-columns);
+	gap: var(--projects-list-gap);
+}
+
+.projects_button {
+	margin-block: var(--projects-button-margin-block);
+}

@@ -1,0 +1,44 @@
+/* stylelint-disable scss/at-rule-no-unknown */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	margin: 0;
+	padding: 0;
+	border-color: rgb(var(--border));
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {
+		font-size: var(--h#{$i}-font-size);
+		font-weight: var(--h#{$i}-font-weight);
+		margin-bottom: 0.75em;
+		line-height: 1.2;
+	}
+}
+
+p {
+	font-size: var(--p-font-size);
+	line-height: 1.25;
+	color: rgb(var(--muted));
+}
+
+button,
+select,
+input,
+textarea {
+	overflow: hidden;
+}
+
+button {
+	text-transform: none;
+}
+
+b {
+	color: rgb(var(--primary));
+}
+
+:focus-visible {
+	outline: none;
+}

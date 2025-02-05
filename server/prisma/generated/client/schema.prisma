@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "./generated/client"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Post {
+  id String @id @default(cuid())
+
+  tag         PostTag
+  name        String
+  description String
+  content     String
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+}
+
+enum PostTag {
+  HTML
+  CSS
+  JS
+  REACTJS
+  NEXTJS
+  NODEJS
+  NESTJS
+  PRISMA
+  GIT
+}
+
+model Project {
+  id    String @id @default(cuid())
+  idInt Int    @unique @default(autoincrement())
+
+  name        String
+  description String
+  url         String
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+}

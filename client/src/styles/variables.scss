@@ -1,0 +1,85 @@
+:root {
+	--container-max-width: 96rem;
+	--container-large-max-width: 111rem;
+	--container-width: 100%;
+	--container-padding: 1rem;
+	--radius: 0.5rem;
+	--min-radius: 0.25rem;
+	--base-font-size: 1rem;
+	--base-font-weight: 500;
+	--semibold-font-weight: 600;
+	--bold-font-weight: 700;
+	--bolder-font-weight: 800;
+	--black-font-weight: 900;
+	--p-font-size: 1.25rem;
+	--h1-font-size: calc(var(--base-font-size) * 3.5);
+	--h2-font-size: calc(var(--base-font-size) * 3);
+	--h3-font-size: calc(var(--base-font-size) * 2);
+	--h4-font-size: calc(var(--base-font-size) * 1.5);
+	--h5-font-size: calc(var(--base-font-size) * 1.25);
+	--h6-font-size: calc(var(--base-font-size) * 0.75);
+	--h1-font-weight: var(--black-font-weight);
+	--h2-font-weight: var(--bolder-font-weight);
+	--h3-font-weight: var(--bolder-font-weight);
+	--h4-font-weight: var(--bold-font-weight);
+	--h5-font-weight: var(--bold-font-weight);
+	--h6-font-weight: var(--semibold-font-weight);
+	--section-padding-block: 7rem;
+}
+
+@layer base {
+	:root {
+		--background: 255 255 255;
+		--foreground: 7 7 8;
+		--card: 255 255 255;
+		--card-foreground: 7 7 8;
+		--popover: 255 255 255;
+		--popover-foreground: 7 7 8;
+		--primary: 34, 195, 93;
+		--primary-foreground: 255 255 255;
+		--secondary: 180 180 181;
+		--secondary-foreground: 22 22 24;
+		--muted: 20 20 21;
+		--muted-foreground: 20 20 21;
+		--accent: 240 240 241;
+		--accent-foreground: 22 22 24;
+		--destructive: 9 1 1;
+		--destructive-foreground: 250 250 250;
+		--border: 58 58 60;
+		--input: 22 22 24;
+		--ring: 34, 195, 93;
+		--chart-1: 231 110 80;
+		--chart-2: 42 157 144;
+		--chart-3: 39 71 84;
+		--chart-4: 232 196 104;
+		--chart-5: 244 164 98;
+	}
+
+	.dark {
+		--background: 9, 10, 10;
+		--foreground: 242, 242, 242;
+		--card: 9, 10, 10;
+		--card-foreground: 242, 242, 242;
+		--popover: 9, 10, 10;
+		--popover-foreground: 242, 242, 242;
+		--primary: 34, 195, 93;
+		--primary-foreground: 242, 242, 242;
+		--secondary: 30, 30, 30;
+		--secondary-foreground: 85, 85, 85;
+		--muted: 30, 30, 30;
+		--muted-foreground: 64, 64, 64;
+		--accent: 30, 30, 30;
+		--accent-foreground: 242, 242, 242;
+		--destructive: 244, 90, 90;
+		--destructive-foreground: 242, 242, 242;
+		--border: 30, 30, 30;
+		--input: 30, 30, 30;
+		--ring: 34, 195, 93;
+		--chart-1: 255, 180, 0;
+		--chart-2: 255, 196, 0;
+		--chart-3: 255, 208, 0;
+		--chart-4: 255, 215, 0;
+		--chart-5: 255, 224, 0;
+		--light-foreground: 222, 222, 222;
+	}
+}
