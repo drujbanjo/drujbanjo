@@ -7,6 +7,7 @@
 	"license": "UNLICENSED",
 	"scripts": {
 		"build": "prisma generate && nest build",
+		"postinstall": "prisma generate",
 		"start": "prisma generate && nest start",
 		"dev": "nest start --watch",
 		"start:debug": "nest start --debug --watch",
