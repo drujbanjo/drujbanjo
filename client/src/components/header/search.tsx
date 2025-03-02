@@ -17,10 +17,11 @@ import {
 	Button
 } from "@/components"
 import styles from "./header.module.scss"
-import { useGetProjects } from "@/hooks/useProjects"
+import { useGetPosts, useGetProjects } from "@/hooks"
 
 export const HeaderSearch: FC = () => {
-	const { data } = useGetProjects()
+	const { data: projects } = useGetProjects()
+	const { data: posts } = useGetPosts()
 	return (
 		<Dialog>
 			<DialogTrigger asChild>
@@ -36,7 +37,13 @@ export const HeaderSearch: FC = () => {
 					<CommandInput placeholder="Искать..." />
 					<CommandList>
 						<CommandEmpty>Ничего не найдено</CommandEmpty>
-						<CommandGroup>{data?.map(item => <CommandItem key={item.id}>{item.name}</CommandItem>)}</CommandGroup>
+						<CommandGroup>
+							<h5>Проекты</h5>
+							{projects?.map(project => <CommandItem key={project.id}>{project.name}</CommandItem>)}
+						</CommandGroup>
+						<CommandGroup>
+							<h5>Посты</h5>
+							{posts?.map(post => <CommandItem key={post.id}>{post.name}</CommandItem>)}</CommandGroup>
 					</CommandList>
 				</Command>
 			</DialogContent>

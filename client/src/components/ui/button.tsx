@@ -5,7 +5,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "@/lib"
 
 const buttonVariants = cva(
-	"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium focus-visible:outline-none focus-visible:overflow-none focus-visible:ring-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 transition-all hover:translate-y-1 hover:rotate-1 active:scale-90 active:-translate-y-1 active:-rotate-1",
+	"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium focus-visible:outline-none focus-visible:overflow-none focus-visible:ring-none disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 transition-all hover:translate-y-1 hover:rotate-1",
 	{
 		variants: {
 			variant: {
@@ -14,7 +14,7 @@ const buttonVariants = cva(
 				outline: "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
 				accent: "bg-accent text-accent-foreground shadow-sm",
 				ghost: "hover:bg-accent hover:text-accent-foreground",
-				link: "text-primary underline-offset-4 hover:underline hover:translate-y-0 hover:rotate-0 active:scale-100",
+				link: "text-primary underline-offset-4 hover:underline hover:translate-yga-0 hover:rotate-0 active:scale-100",
 				transparent: "bg-transparent"
 			},
 			size: {

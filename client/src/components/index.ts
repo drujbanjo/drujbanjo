@@ -1,3 +1,10 @@
+import ShinyText from "./effects/TextAnimations/ShinyText/ShinyText"
+import FuzzyText from "./effects/TextAnimations/FuzzyText/FuzzyText"
+import AnimatedContent from "./effects/Animations/AnimatedContent/AnimatedContent"
+import Magnet from "./effects/Animations/Magnet/Magnet"
+import FadeContent from "./effects/Animations/FadeContent/FadeContent"
+import Squares from "./effects/Backgrounds/Squares/Squares"
+
 export { Header } from "./header/header"
 export { Container } from "./conatiner/container"
 export {
@@ -51,7 +58,11 @@ export {
 	DialogClose,
 	DialogOverlay
 } from "./ui/dialog"
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent } from "./ui/card"
+export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent, CardSubTitle } from "./ui/card"
 export { Button } from "./ui/button"
 export { ThemeToggle } from "./ui/theme-toggle"
 export { Separator } from "./ui/separator"
+export { Input } from "./ui/input"
+export { Alert, AlertDescription, AlertTitle, alertVariants } from "./ui/alert"
+export { Toc } from "./toc/toc"
+export { ShinyText, FuzzyText, AnimatedContent, Magnet, Squares, FadeContent }

@@ -3,59 +3,66 @@ import tailwindAnimate from "tailwindcss-animate"
 
 export default {
 	darkMode: ["class"],
-	content: [
-		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-		"./src/app/**/*.{js,ts,jsx,tsx,mdx}"
-	],
+	content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
 			colors: {
-				background: "rgb(var(--background))",
-				foreground: "rgb(var(--foreground))",
+				light: "rgba(var(--light))",
+				dark: "rgba(var(--dark))",
+				background: "rgba(var(--background))",
+				foreground: "rgba(var(--foreground))",
 				card: {
-					DEFAULT: "rgb(var(--card))",
-					foreground: "rgb(var(--card-foreground))"
+					DEFAULT: "rgba(var(--card))",
+					foreground: "rgba(var(--card-foreground))"
 				},
 				popover: {
-					DEFAULT: "rgb(var(--popover))",
-					foreground: "rgb(var(--popover-foreground))"
+					DEFAULT: "rgba(var(--popover))",
+					foreground: "rgba(var(--popover-foreground))"
 				},
 				primary: {
-					DEFAULT: "rgb(var(--primary))",
-					foreground: "rgb(var(--primary-foreground))"
+					DEFAULT: "rgba(var(--primary))",
+					foreground: "rgba(var(--primary-foreground))"
 				},
 				secondary: {
-					DEFAULT: "rgb(var(--secondary))",
-					foreground: "rgb(var(--secondary-foreground))"
+					DEFAULT: "rgba(var(--secondary))",
+					foreground: "rgba(var(--secondary-foreground))"
 				},
 				muted: {
-					DEFAULT: "rgb(var(--muted))",
-					foreground: "rgb(var(--muted-foreground))"
+					DEFAULT: "rgba(var(--muted))",
+					foreground: "rgba(var(--muted-foreground))"
 				},
 				accent: {
-					DEFAULT: "rgb(var(--accent))",
-					foreground: "rgb(var(--accent-foreground))"
+					DEFAULT: "rgba(var(--accent))",
+					foreground: "rgba(var(--accent-foreground))"
 				},
 				destructive: {
-					DEFAULT: "rgb(var(--destructive))",
-					foreground: "rgb(var(--destructive-foreground))"
+					DEFAULT: "rgba(var(--destructive))",
+					foreground: "rgba(var(--destructive-foreground))"
 				},
-				border: "rgb(var(--border))",
-				input: "rgb(var(--input))",
-				ring: "rgb(var(--ring))",
+				border: "rgba(var(--border))",
+				input: "rgba(var(--input))",
+				ring: "rgba(var(--ring))",
 				chart: {
-					"1": "rgb(var(--chart-1))",
-					"2": "rgb(var(--chart-2))",
-					"3": "rgb(var(--chart-3))",
-					"4": "rgb(var(--chart-4))",
-					"5": "rgb(var(--chart-5))"
+					"1": "rgba(var(--chart-1))",
+					"2": "rgba(var(--chart-2))",
+					"3": "rgba(var(--chart-3))",
+					"4": "rgba(var(--chart-4))",
+					"5": "rgba(var(--chart-5))"
 				}
 			},
 			borderRadius: {
 				lg: "var(--radius)",
-				md: "calc(var(--radius) - 2px)",
-				sm: "calc(var(--radius) - 4px)"
+				md: "calc(var(--radius) - 0.125rem)",
+				sm: "calc(var(--radius) - 0.25rem)"
+			},
+			keyframes: {
+				shine: {
+					"0%": { "background-position": "100%" },
+					"100%": { "background-position": "-100%" }
+				}
+			},
+			animation: {
+				shine: "shine 5s linear infinite"
 			}
 		}
 	},

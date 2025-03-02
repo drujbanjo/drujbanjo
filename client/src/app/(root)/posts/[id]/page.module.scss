@@ -1,0 +1,30 @@
+.wrap {
+	display: grid;
+	grid-template-columns: 1fr 16rem;
+	grid-template-rows: auto;
+	gap: 3rem;
+
+	--content-border-radius: 1rem;
+	--content-padding: 1.5rem;
+	--title-margin-block: 0 1rem;
+	--description-font-size: 1.5rem;
+	--description-color: rgb(var(--secondary-foreground));
+	--description-margin-block: 0 1rem;
+	
+}
+
+.title {
+	margin-block: var(--title-margin-block);
+}
+
+.description {
+	font-size: var(--description-font-size);
+	color: var(--description-color);
+	margin-block: var(--description-margin-block);
+}
+
+.content {
+	width: 100%;
+	border-radius: var(--content-border-radius);
+	padding: var(--content-padding);
+}

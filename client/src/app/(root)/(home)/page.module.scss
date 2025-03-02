@@ -1,7 +1,7 @@
-.home {
-	--masthead-max-width: 70rem;
+.wrap {
+	--masthead-max-width: 75rem;
 	--masthead-padding-block: 8rem;
-	--masthead-title-font-size: 4rem;
+	--masthead-title-font-size: 4.5rem;
 	--buttons-group-margin-block: 2rem 0;
 	--buttons-group-gap: 1rem;
 	--projects-list-columns: repeat(3, 1fr);
@@ -33,7 +33,15 @@
 .projects_list {
 	display: grid;
 	grid-template-columns: var(--projects-list-columns);
+	grid-template-rows: 1fr;
 	gap: var(--projects-list-gap);
+}
+
+.project_link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .projects_button {

@@ -1,0 +1,107 @@
+.toc {
+	border-radius: var(--toc-border-radius);
+	position: sticky;
+	top: 100rem;
+	right: 0;
+	padding: var(--toc-padding);
+
+	--toc-padding: 1rem;
+	--toc-border-radius: 1rem;
+	--toc-title-font-size: 1.25rem;
+	--toc-title-font-weight: var(--black);
+	--toc-title-margin-block: 0 0.5rem;
+	--toc-list-margin-block: 1rem 0;
+	--toc-item-margin-block: 0 0.5rem;
+	--toc-item-padding-inline: 0.375rem 0;
+	--toc-subitem-margin-block: 0.375rem 0;
+	--toc-link-padding-inline: 0.375rem 0;
+	--toc-link-font-size: 1.125rem;
+	--toc-link-font-weight: var(--extrabold);
+	--toc-link-after-height: 100%;
+	--toc-link-after-width: 0.125rem;
+	--toc-sublink-padding-inline: 0.375rem 0;
+	--toc-subitem-margin-inline: 0.375rem 0;
+	--toc-sublink-font-size: 1rem;
+	--toc-sublink-font-weight: var(--bold);
+	--toc-sublist-padding-inline: 0.5rem;
+}
+
+.toc_title {
+	font-size: var(--toc-title-font-size);
+	font-weight: var(--toc-title-font-weight);
+	margin-block: var(--toc-title-margin-block);
+}
+
+.toc_list {
+	list-style: none;
+	margin-block: var(--toc-list-margin-block);
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+
+	& > :not(:last-child) {
+		margin-block: var(--toc-item-margin-block);
+	}
+}
+
+.toc_item {
+	padding-inline: var(--toc-item-padding-inline);
+}
+
+.toc_sublist {
+	list-style: none;
+	padding-inline: var(--toc-sublist-padding-inline);
+
+	& > :not(:last-child) {
+		margin-block: var(--toc-subitem-margin-block);
+	}
+}
+
+.toc_link {
+	padding-inline: var(--toc-link-padding-inline);
+	position: relative;
+	display: inline-block;
+	font-size: var(--toc-link-font-size);
+	font-weight: var(--toc-link-font-weight);
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: var(--toc-link-after-height);
+		width: var(--toc-link-after-width);
+		background: rgb(var(--border));
+		opacity: 0;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+}
+
+.toc_subitem {
+	margin-inline: var(--toc-subitem-margin-inline);
+}
+
+.toc_sublink {
+	position: relative;
+	padding-inline: var(--toc-sublink-padding-inline);
+	font-size: var(--toc-sublink-font-size);
+	font-weight: var(--toc-sublink-font-weight);
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: var(--toc-link-after-height);
+		width: var(--toc-link-after-width);
+		background: rgb(var(--border));
+		opacity: 0;
+	}
+
+	&:hover::after {
+		opacity: 1;
+	}
+}

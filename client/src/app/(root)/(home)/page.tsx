@@ -1,17 +1,34 @@
 "use client"
 
-import { Button, Container, Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components"
+import {
+	Button,
+	Container,
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+	ShinyText,
+	Magnet,
+	Squares,
+	FadeContent
+} from "@/components"
 import { FC } from "react"
 import styles from "./page.module.scss"
 import Link from "next/link"
 import { BookMarked, Notebook } from "lucide-react"
 import { stringToDate } from "@/utility"
-import { useGetProjects } from "@/hooks/useProjects"
+import { useGetProjects } from "@/hooks"
+
 const HomePage: FC = () => {
 	return (
-		<div className={styles.home}>
-			<Masthead />
-			<Projects />
+		<div className={styles.wrap}>
+			<Squares />
+			<FadeContent>
+				<Masthead />
+				<Projects />
+			</FadeContent>
 		</div>
 	)
 }
@@ -22,6 +39,9 @@ const Masthead: FC = () => {
 	return (
 		<section className={styles.masthead}>
 			<Container>
+				<h5>
+					<ShinyText text="Не теряй время в поисках информации" speed={2} />
+				</h5>
 				<h1 className={styles.masthead_title}>
 					Повседневные <b>инструменты</b>, <b>Документации</b> и <b>Ресурсы</b> вы можете найти здесь
 				</h1>
@@ -33,12 +53,14 @@ const Masthead: FC = () => {
 					чтобы ничего на забывать. Все это вы можете использовать здесь
 				</p>
 				<div className={styles.buttons_group}>
-					<Button size={"xl"} asChild>
-						<Link href={"blog"}>
-							<BookMarked />
-							<span>Мой блог</span>
-						</Link>
-					</Button>
+					<Magnet>
+						<Button size={"xl"} asChild>
+							<Link href={"blog"}>
+								<BookMarked />
+								<span>Мой блог</span>
+							</Link>
+						</Button>
+					</Magnet>
 					<Button size={"xl"} variant={"outline"} asChild>
 						<Link href={"notebook"}>
 							<Notebook />
@@ -52,35 +74,41 @@ const Masthead: FC = () => {
 }
 
 const Projects: FC = () => {
-	const { data } = useGetProjects()
+	const { data: projects } = useGetProjects()
 
 	return (
 		<section>
 			<Container>
 				<h2>Проекты</h2>
-				<div className={styles.projects_list}>
-					{data?.map(
+				<ul className={styles.projects_list}>
+					{projects?.map(
 						project =>
-							project.idInt < 7 && (
-								<Card key={project.id} id={`${project.idInt}`}>
-									<Link href={project.url}>
-										<CardHeader>
-											<CardTitle>{project.name}</CardTitle>
-										</CardHeader>
-										<CardContent>
-											<CardDescription>{project.description}</CardDescription>
-										</CardContent>
-										<CardFooter>
-											<CardDescription>{stringToDate(project.createdAt)}</CardDescription>
-										</CardFooter>
-									</Link>
-								</Card>
+							project.idInt <= 3 && (
+								<li key={project.idInt}>
+									<Card id={project.id}>
+										<Link href={project.url} className={styles.project_link}>
+											<div>
+												<CardHeader>
+													<CardTitle>{project.name}</CardTitle>
+												</CardHeader>
+												<CardContent>
+													<CardDescription>{project.description}</CardDescription>
+												</CardContent>
+											</div>
+											<CardFooter>
+												<CardDescription>{stringToDate(project.createdAt)}</CardDescription>
+											</CardFooter>
+										</Link>
+									</Card>
+								</li>
 							)
 					)}
-				</div>
-				<Button size={"lg"} asChild variant={"accent"} className={styles.projects_button}>
-					<Link href={"projects"}>Все проекты</Link>
-				</Button>
+				</ul>
+				<Magnet>
+					<Button size={"lg"} asChild variant={"accent"} className={styles.projects_button}>
+						<Link href={"projects"}>Все проекты</Link>
+					</Button>
+				</Magnet>
 			</Container>
 		</section>
 	)
