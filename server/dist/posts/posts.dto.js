@@ -13,15 +13,15 @@ exports.CreatePostsDto = void 0;
 const class_validator_1 = require("class-validator");
 var PostTagEnum;
 (function (PostTagEnum) {
-    PostTagEnum["HTML"] = "HTML";
-    PostTagEnum["CSS"] = "CSS";
-    PostTagEnum["JS"] = "JS";
-    PostTagEnum["REACTJS"] = "REACTJS";
-    PostTagEnum["NEXTJS"] = "NEXTJS";
-    PostTagEnum["NODEJS"] = "NODEJS";
-    PostTagEnum["NESTJS"] = "NESTJS";
-    PostTagEnum["PRISMA"] = "PRISMA";
-    PostTagEnum["GIT"] = "GIT";
+    PostTagEnum["html"] = "html";
+    PostTagEnum["css"] = "css";
+    PostTagEnum["js"] = "js";
+    PostTagEnum["react"] = "react";
+    PostTagEnum["next"] = "next";
+    PostTagEnum["node"] = "node";
+    PostTagEnum["nest"] = "nest";
+    PostTagEnum["prisma"] = "prisma";
+    PostTagEnum["git"] = "git";
 })(PostTagEnum || (PostTagEnum = {}));
 class CreatePostsDto {
 }

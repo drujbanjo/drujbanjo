@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  output   = "./generated/client"
 }
 
 datasource db {
@@ -21,15 +20,15 @@ model Post {
 }
 
 enum PostTag {
-  HTML
-  CSS
-  JS
-  REACTJS
-  NEXTJS
-  NODEJS
-  NESTJS
-  PRISMA
-  GIT
+  html
+  css
+  js
+  react
+  next
+  node
+  nest
+  prisma
+  git
 }
 
 model Project {

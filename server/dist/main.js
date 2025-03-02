@@ -5,11 +5,11 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule);
     app.enableCors({
-        origin: "https://drujbanjo.vercel.app/",
+        origin: "*",
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
         allowedHeaders: "Content-Type, Authorization"
     });
-    await app.listen(process.env.PORT || 4200, '0.0.0.0');
+    await app.listen(process.env.PORT || 4200, "0.0.0.0");
 }
 bootstrap();
 //# sourceMappingURL=main.js.map

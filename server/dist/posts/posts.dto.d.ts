@@ -1,13 +1,13 @@
 declare enum PostTagEnum {
-    HTML = "HTML",
-    CSS = "CSS",
-    JS = "JS",
-    REACTJS = "REACTJS",
-    NEXTJS = "NEXTJS",
-    NODEJS = "NODEJS",
-    NESTJS = "NESTJS",
-    PRISMA = "PRISMA",
-    GIT = "GIT"
+    html = "html",
+    css = "css",
+    js = "js",
+    react = "react",
+    next = "next",
+    node = "node",
+    nest = "nest",
+    prisma = "prisma",
+    git = "git"
 }
 export declare class CreatePostsDto {
     tag: PostTagEnum;
