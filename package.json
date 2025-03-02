@@ -11,7 +11,6 @@
 		"lint": "concurrently --kill-others \"bun run --cwd ./server lint\" \"bun run --cwd ./client eslint\" "
 	},
 	"dependencies": {
-		"@react-spring/web": "^9.7.5",
 		"@types/bun": "^1.1.16"
 	},
 	"devDependencies": {
