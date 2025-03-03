@@ -5,14 +5,18 @@ import ProjectRoutes from "@/routes/project.routes.js"
 
 const app: Express = express()
 
+// configs
 app.use(cors)
 app.use(express.json())
 
+
+// routes
 app.use("/posts", PostRoutes)
 app.use("/projects", ProjectRoutes)
+
 
 app.get("/", (req: Request, res: Response) => {
 	res.send(["[posts]: {HOST}/posts/*", "[projects]: {HOST}/projects/*"])
 })
 
-export default app
+export {app}
