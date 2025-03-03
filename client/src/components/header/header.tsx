@@ -27,7 +27,16 @@ export const Header: FC<Props> = ({ className }) => {
 	return (
 		<header className={cn(styles.header, className)}>
 			<Container>
-				<AnimatedContent>
+				<AnimatedContent
+					distance={100}
+					direction="vertical"
+					reverse={false}
+					config={{ tension: 80, friction: 20 }}
+					initialOpacity={0.0}
+					animateOpacity
+					scale={0.8}
+					threshold={0.2}
+				>
 					<NavigationMenu className={styles.nav}>
 						<div className={styles.left}>
 							<div className={styles.logo}>
