@@ -30,7 +30,7 @@ const CreatePostPage: FC = () => {
 							content: md,
 							tag: PostTagsEnum.react,
 							name: "3 самых популярных хуков в react",
-							description: "В этой статье вы научитесь исползовать хуки: useState, useEffect и useRef.",
+							description: "В этой статье вы научитесь исползовать хуки: useState, useEffect и useRef."
 						})
 					}}
 				>

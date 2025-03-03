@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const ProjectsService = () => {
 	const client = axios.create({
-		baseURL: 'http://localhost:4200/projects',
+		baseURL: "http://localhost:4200/projects"
 	})
 
 	const getAll = () => {

@@ -34,7 +34,7 @@ const BlogPage: FC = () => {
 			setName(value)
 		}
 
-		searchRef.current.addEventListener("input", (e) => func(e))
+		searchRef.current.addEventListener("input", e => func(e))
 		return searchRef.current.removeEventListener("input", func)
 	}, [setName])
 	return (

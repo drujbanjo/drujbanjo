@@ -4,7 +4,7 @@
 	02.03.2025
 */
 
-'use client'
+"use client"
 
 import React, { useState, useEffect, useRef, ReactNode, HTMLAttributes } from "react"
 

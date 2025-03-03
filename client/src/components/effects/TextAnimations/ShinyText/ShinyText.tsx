@@ -26,7 +26,6 @@ const ShinyText: React.FC<ShinyTextProps> = ({ text, disabled = false, speed = 5
 				WebkitBackgroundClip: "text",
 				animationDuration: animationDuration
 			}}
-			
 		>
 			{text}
 		</div>
@@ -34,4 +33,3 @@ const ShinyText: React.FC<ShinyTextProps> = ({ text, disabled = false, speed = 5
 }
 
 export default ShinyText
-

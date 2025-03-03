@@ -43,7 +43,8 @@ export const HeaderSearch: FC = () => {
 						</CommandGroup>
 						<CommandGroup>
 							<h5>Посты</h5>
-							{posts?.map(post => <CommandItem key={post.id}>{post.name}</CommandItem>)}</CommandGroup>
+							{posts?.map(post => <CommandItem key={post.id}>{post.name}</CommandItem>)}
+						</CommandGroup>
 					</CommandList>
 				</Command>
 			</DialogContent>

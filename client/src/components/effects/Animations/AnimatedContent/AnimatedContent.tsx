@@ -4,7 +4,7 @@
 	02.03.2025
 */
 
-'use client'
+"use client"
 
 import { useRef, useEffect, useState, ReactNode } from "react"
 import { useSpring, animated, SpringConfig } from "@react-spring/web"
@@ -84,6 +84,5 @@ const AnimatedContent: React.FC<AnimatedContentProps> = ({
 	)
 }
 const AnimatedDiv = animated("div")
-
 
 export default AnimatedContent

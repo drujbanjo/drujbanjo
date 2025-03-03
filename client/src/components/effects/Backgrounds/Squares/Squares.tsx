@@ -4,7 +4,7 @@
 	02.03.2025
 */
 
-'use client'
+"use client"
 
 import React, { useRef, useEffect } from "react"
 

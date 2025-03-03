@@ -316,7 +316,7 @@ const MyComponent = () => {
 
 	return (
 		<div>
-	    {/* Определяем ref */}
+			{/* Определяем ref */}
 			<input ref={ref} type="text" placeholder="Focus here" />
 			<button onClick={handleFocus}>Focus</button>
 		</div>
