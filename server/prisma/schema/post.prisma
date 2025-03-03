@@ -1,0 +1,23 @@
+model Post {
+  id String @id @default(cuid())
+
+  tag         PostTag
+  name        String
+  description String
+  content     String
+
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+}
+
+enum PostTag {
+  html
+  css
+  js
+  react
+  next
+  node
+  nest
+  prisma
+  git
+}

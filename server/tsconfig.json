@@ -1,21 +1,27 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"declaration": true,
-		"removeComments": true,
-		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"allowSyntheticDefaultImports": true,
-		"target": "ES2021",
-		"sourceMap": true,
 		"outDir": "./dist",
-		"baseUrl": "./",
-		"incremental": true,
+		"rootDir": "./src",
+		"target": "ES2018",
+		"lib": ["ES6"],
+		"module": "NodeNext",
+		"esModuleInterop": true,
+		"allowJs": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitAny": true,
+		"strict": true,
+		"sourceMap": true,
 		"skipLibCheck": true,
-		"strictNullChecks": false,
-		"noImplicitAny": false,
-		"strictBindCallApply": false,
-		"forceConsistentCasingInFileNames": false,
-		"noFallthroughCasesInSwitch": false
+		"paths": {
+			"@/*": ["./src/*"],
+			"~/*": ["./*"]
+		}
+	},
+	"exclude": ["./node_modules"],
+	"include": ["./**/*.ts"],
+	"lib": ["esnext"],
+	"ts-node": {
+		"esm": true
 	}
 }
