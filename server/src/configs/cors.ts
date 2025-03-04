@@ -6,4 +6,4 @@ export const corsOptions: CorsOptions = {
 	allowedHeaders: ["Content-Type", "Authorization"]
 }
 
-export default cors(corsOptions)
+export default cors()
