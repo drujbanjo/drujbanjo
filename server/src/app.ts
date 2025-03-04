@@ -13,8 +13,8 @@ app.use(cors())
 app.use(express.json())
 
 // routes
-app.use("/posts", PostRoutes)
-app.use("/projects", ProjectRoutes)
+app.use("/posts", cors(), PostRoutes)
+app.use("/projects", cors(), ProjectRoutes)
 
 app.get("/", (req: Request, res: Response) => {
 	res.send(["[posts]: {HOST}/posts/*", "[projects]: {HOST}/projects/*"])
