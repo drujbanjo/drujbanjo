@@ -44,6 +44,9 @@ export const Header: FC<Props> = ({ className }) => {
 									<Image className={styles.logo_img} src={Logo} alt="logo" />
 								</Link>
 							</div>
+							<HeaderSearch />
+						</div>
+						<div className={styles.center}>
 							<NavigationMenuList className={styles.links}>
 								{NavigationMenuLinks.map(link => (
 									<NavigationMenuItem key={link.id} className={styles.links_item}>
@@ -55,7 +58,6 @@ export const Header: FC<Props> = ({ className }) => {
 							</NavigationMenuList>
 						</div>
 						<div className={styles.right}>
-							<HeaderSearch />
 							<NavigationMenuList className={styles.social}>
 								<NavigationMenuItem className={styles.social_item}>
 									<NavigationMenuLink href={"https://t.me/drujbanjo"} className={styles.social_link}>
@@ -68,10 +70,10 @@ export const Header: FC<Props> = ({ className }) => {
 									</NavigationMenuLink>
 								</NavigationMenuItem>
 							</NavigationMenuList>
-							<Separator orientation="vertical" className="mr-3 ml-4 max-h-6" />
+							<Separator orientation="vertical" className="mr-4 ml-4 max-h-6" />
 							<NavigationMenuList className={styles.tools}>
 								<NavigationMenuItem className={styles.tools_item}>
-									<ThemeToggle />
+									<ThemeToggle className={styles.tools_toggle} />
 								</NavigationMenuItem>
 							</NavigationMenuList>
 						</div>

@@ -34,8 +34,8 @@ export const HeaderSearch: FC = () => {
 			<DialogContent>
 				<DialogTitle>Искать</DialogTitle>
 				<Command>
-					<CommandInput placeholder="Искать..." />
-					<CommandList>
+					<CommandInput className='' placeholder="Искать..." />
+					<CommandList className='mt-5'>
 						<CommandEmpty>Ничего не найдено</CommandEmpty>
 						<CommandGroup>
 							<h5>Проекты</h5>

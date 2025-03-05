@@ -4,6 +4,7 @@ import AnimatedContent from "./effects/Animations/AnimatedContent/AnimatedConten
 import Magnet from "./effects/Animations/Magnet/Magnet"
 import FadeContent from "./effects/Animations/FadeContent/FadeContent"
 import Squares from "./effects/Backgrounds/Squares/Squares"
+import Dock from "./effects/Components/Dock/Dock"
 
 export { Header } from "./header/header"
 export { Container } from "./conatiner/container"
@@ -65,4 +66,4 @@ export { Separator } from "./ui/separator"
 export { Input } from "./ui/input"
 export { Alert, AlertDescription, AlertTitle, alertVariants } from "./ui/alert"
 export { Toc } from "./toc/toc"
-export { ShinyText, FuzzyText, AnimatedContent, Magnet, Squares, FadeContent }
+export { ShinyText, FuzzyText, AnimatedContent, Magnet, Squares, FadeContent, Dock }
