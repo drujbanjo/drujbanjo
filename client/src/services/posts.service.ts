@@ -3,7 +3,10 @@ import axios from "axios"
 
 export const PostsService = () => {
 	const client = axios.create({
-		baseURL: `${process.env.NEXT_PUBLIC_API_URL}/posts` || "http://localhost:4200/posts"
+		baseURL:
+			`${process.env.NEXT_PUBLIC_API_URL}/posts` ||
+			`${process.env.API_URL}/posts` ||
+			"http://localhost:4200/posts"
 	})
 
 	const getAll = () => {

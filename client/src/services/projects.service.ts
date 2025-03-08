@@ -3,7 +3,10 @@ import axios from "axios"
 
 export const ProjectsService = () => {
 	const client = axios.create({
-		baseURL: `${process.env.NEXT_PUBLIC_API_URL}/projects` || "http://localhost:4200/projects"
+		baseURL:
+			`${process.env.NEXT_PUBLIC_API_URL}/projects` ||
+			`${process.env.API_URL}/projects` ||
+			"http://localhost:4200/projects"
 	})
 
 	const getAll = () => {
