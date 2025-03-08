@@ -2,6 +2,7 @@ import { z } from "zod"
 
 export type TPostDto = {
 	id: string
+	idInt: number
 	tag: PostTagsEnum
 	name: string
 	description: string
