@@ -1,16 +1,16 @@
 .header {
 	width: 100%;
-	margin-block: 1.5rem;
+	margin-block: 2rem;
 
 	--bars-background: rgb(var(--background));
-	--bars-template-columns: repeat(2, 1fr);
 	--bars-gap: 1rem;
 	--bars-padding: 0.5rem;
-	--bars-outline: 0.0625rem solid rgb(var(--border));
+	--bars-border: 0.0625rem solid rgb(var(--border));
 	--bars-radius: 0.75rem;
 	--bars-shadow: 0rem 0.375rem 0.5rem 0.125rem rgba(var(--border) / 10%);
 	--bars-translate: 0 0.25rem;
 	--logo-width: 2.75rem;
+	--logo-hover-border-color: rgb(var(--foreground));
 	--links-margin-inline: 0.25rem;
 	--links-link-padding: 0.5rem;
 	--links-link-font-weight: var(--base-font-weight);
@@ -27,12 +27,17 @@
 	--social-link-img-width: 1.25rem;
 	--social-link-border: 1px solid rgb(var(--border));
 	--social-link-border-radius: calc(var(--bars-radius) / 1.6);
+	--social-link-hover-border-color: rgb(var(--foreground));
 	--tools-item-width: var(--social-item-width);
 	--tools-toggle-border: var(--social-link-border);
 	--tools-toggle-border-radius: var(--social-link-border-radius);
+	--tools-toggle-hover-border-color: rgb(var(--foreground));
 }
 
 .nav {
+	position: sticky;
+	top: 100px;
+	left: 0;
 	width: 100%;
 	max-width: 100%;
 	display: flex;
@@ -59,7 +64,7 @@
 	display: flex;
 	align-items: center;
 	padding: var(--bars-padding);
-	outline: var(--bars-outline);
+	border: var(--bars-border);
 	border-radius: var(--bars-radius);
 	box-shadow: var(--bars-shadow);
 	transition: translate 0.2s ease;
@@ -78,6 +83,14 @@
 	border: 1px solid rgb(var(--border));
 	border-radius: var(--bars-radius);
 	padding: 0.25rem;
+	transition:
+		scale 0.3s ease,
+		border-color 0.3s ease;
+
+	&:hover {
+		scale: 1.05;
+		border-color: var(--logo-hover-border-color);
+	}
 }
 
 .logo_img {
@@ -117,12 +130,15 @@
 	font-weight: var(--links-link-font-weight);
 	text-transform: capitalize;
 	color: var(--links-link-color);
-	transition: color 0.3s ease;
 	border: var(--links-link-border);
 	border-radius: var(--links-link-border-radius);
+	transition:
+		color 0.3s ease,
+		border-color 0.3s ease;
 
 	&:hover {
 		color: var(--links-link-hover-color);
+		border-color: var(--links-link-hover-color);
 	}
 }
 
@@ -150,6 +166,11 @@
 	justify-content: center;
 	border: var(--social-link-border);
 	border-radius: var(--social-link-border-radius);
+	transition: border-color 0.3s ease;
+
+	&:hover {
+		border-color: var(--social-link-hover-border-color);
+	}
 }
 
 .social_img {
@@ -169,6 +190,11 @@
 	padding: 0;
 	width: var(--tools-item-width);
 	aspect-ratio: 1;
+	transition: translate 0.3s ease;
+
+	&:hover {
+		translate: 0 -0.25rem;
+	}
 }
 
 .tools_toggle {
@@ -177,4 +203,9 @@
 	height: 100%;
 	border: var(--tools-toggle-border);
 	border-radius: var(--tools-toggle-border-radius);
+	transition: border-color 0.3s ease;
+
+	&:hover {
+		border-color: var(--tools-toggle-hover-border-color);
+	}
 }

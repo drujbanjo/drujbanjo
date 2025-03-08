@@ -1,8 +1,8 @@
 .wrap {
 	--masthead-max-width: 75rem;
-	--masthead-padding-block: 8rem;
+	--masthead-padding-block: 9rem;
 	--masthead-title-font-size: 4.5rem;
-	--buttons-group-margin-block: 2rem 0;
+	--buttons-group-margin-block: 4rem 0;
 	--buttons-group-gap: 1rem;
 	--projects-list-columns: repeat(3, 1fr);
 	--projects-list-gap: 2rem;
@@ -11,23 +11,38 @@
 
 .masthead {
 	padding-block: var(--masthead-padding-block);
+	position: relative;
+}
+
+.masthead_subtitle {
+	text-align: center;
+	line-height: 1;
 }
 
 .masthead_title {
 	font-size: var(--masthead-title-font-size);
 	max-width: var(--masthead-max-width);
+	text-align: center;
+	margin-inline: auto;
 	line-height: 1;
+
+	b {
+		text-shadow: 0 0 5px rgba(var(--primary), 0.5);
+	}
+}
+
+.description {
+	max-width: var(--masthead-max-width);
+	text-align: center;
+	margin-inline: auto;
 }
 
 .buttons_group {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: var(--buttons-group-gap);
 	margin-block: var(--buttons-group-margin-block);
-}
-
-.description {
-	max-width: var(--masthead-max-width);
 }
 
 .projects_list {
@@ -45,5 +60,23 @@
 }
 
 .projects_button {
+	margin-block: var(--projects-button-margin-block);
+}
+
+.posts_list {
+	display: grid;
+	grid-template-columns: var(--projects-list-columns);
+	grid-template-rows: 1fr;
+	gap: var(--projects-list-gap);
+}
+
+.post_link {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.posts_button {
 	margin-block: var(--projects-button-margin-block);
 }
