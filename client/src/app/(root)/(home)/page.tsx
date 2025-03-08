@@ -82,7 +82,7 @@ const Projects: FC = () => {
 				<ul className={styles.projects_list}>
 					{projects?.map(
 						project =>
-							project.idInt <= 3 && (
+							project.idInt! <= 3 && (
 								<li key={project.idInt}>
 									<Card id={project.id}>
 										<Link href={project.url} className={styles.project_link}>
@@ -95,7 +95,7 @@ const Projects: FC = () => {
 												</CardContent>
 											</div>
 											<CardFooter>
-												<CardDescription>{stringToDate(project.createdAt)}</CardDescription>
+												<CardDescription>{stringToDate(project.createdAt!)}</CardDescription>
 											</CardFooter>
 										</Link>
 									</Card>
@@ -122,7 +122,7 @@ const Posts: FC = () => {
 				<ul className={styles.posts_list}>
 					{posts?.map(
 						post =>
-							post.idInt <= 3 && (
+							post.idInt! <= 3 && (
 								<li key={post.idInt}>
 									<Card id={post.id}>
 										<Link href={`posts/${post.id}`} className={styles.post_link}>
@@ -135,7 +135,7 @@ const Posts: FC = () => {
 												</CardContent>
 											</div>
 											<CardFooter>
-												<CardDescription>{stringToDate(post.createdAt)}</CardDescription>
+												<CardDescription>{stringToDate(post.createdAt!)}</CardDescription>
 											</CardFooter>
 										</Link>
 									</Card>

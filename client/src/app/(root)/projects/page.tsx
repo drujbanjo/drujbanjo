@@ -29,7 +29,7 @@ const ProjectsPage: FC = () => {
 										</CardContent>
 									</div>
 									<CardFooter>
-										<CardDescription>{stringToDate(project.createdAt)}</CardDescription>
+										<CardDescription>{stringToDate(project.createdAt!)}</CardDescription>
 									</CardFooter>
 								</Link>
 							</Card>
