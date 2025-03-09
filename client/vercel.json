@@ -2,7 +2,7 @@
 	"routes": [
 		{
 			"src": "/notebook/(.*)",
-			"dest": "https://notebook.vercel.app/$1"
+			"dest": "https://drujbanjo-notebook.vercel.app/$1"
 		}
 	]
 }
