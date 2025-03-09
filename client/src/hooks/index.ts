@@ -1,2 +1,2 @@
-export { usePutProject, useGetProjects, useGetProject, usePostProject, useRemoveProject } from "./useProjects"
-export { useGetPosts, useGetPost, usePostPost, usePutPost, useRemovePost, useSortPosts } from "./usePosts"
+export { usePutProject, useGetProjects, useGetProject, usePostProject, useRemoveProject } from "./useProject"
+export { useGetPosts, useGetPost, usePostPost, usePutPost, useRemovePost, useSortPosts } from "./usePost"

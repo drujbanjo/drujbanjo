@@ -1,0 +1,8 @@
+{
+	"routes": [
+		{
+			"src": "/notebook/(.*)",
+			"dest": "https://notebook.vercel.app/$1"
+		}
+	]
+}

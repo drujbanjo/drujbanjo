@@ -1,6 +1,10 @@
-import { TNavigationMenuLink } from "@/types"
+export type TNavigationMenuLink = {
+	id: number
+	name: string
+	url: string
+}
 
-export const NavigationMenuLinks: TNavigationMenuLink[] = [
+export const HeaderMenuLinks: TNavigationMenuLink[] = [
 	{
 		id: 0,
 		name: "блог",

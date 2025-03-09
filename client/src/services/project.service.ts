@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const ProjectsService = () => {
 	const client = axios.create({
-		baseURL: `${process.env.NEXT_PUBLIC_API_URL}/projects` || "https://drujbanjo-server.vercel.app/projects"
+		baseURL: `${process.env.NEXT_PUBLIC_API_URL}/projects`
 	})
 
 	const getAll = () => {

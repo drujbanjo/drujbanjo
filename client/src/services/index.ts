@@ -1,2 +1,2 @@
-export { ProjectsService } from "./projects.service"
-export { PostsService } from "./posts.service"
+export { ProjectsService } from "./project.service"
+export { PostsService } from "./post.service"

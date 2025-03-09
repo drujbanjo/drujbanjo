@@ -1,2 +1,2 @@
-export { NavigationMenuLinks } from "./headerMenuLinks"
+export { HeaderMenuLinks } from "./headerMenuLinks"
 export { PostTags } from "./postTags"

@@ -16,7 +16,7 @@ import Logo from "@/assets/logo.png"
 import Github from "@/assets/github.svg"
 import Telegram from "@/assets/telegram.svg"
 import { HeaderSearch } from "./search"
-import { NavigationMenuLinks } from "@/constants"
+import { HeaderMenuLinks } from "@/constants"
 import Link from "next/link"
 
 type Props = {
@@ -48,7 +48,7 @@ export const Header: FC<Props> = ({ className }) => {
 						</div>
 						<div className={styles.center}>
 							<NavigationMenuList className={styles.links}>
-								{NavigationMenuLinks.map(link => (
+								{HeaderMenuLinks.map(link => (
 									<NavigationMenuItem key={link.id} className={styles.links_item}>
 										<NavigationMenuLink className={styles.links_link} href={link.url}>
 											{link.name}
