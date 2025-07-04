@@ -10,26 +10,26 @@ jobs:
     name: Update Readme with Metrics
     runs-on: ubuntu-latest
     steps:
-      - uses: anmol098/waka-readme-stats@master
+      - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           
-          # Время кодинга (badge)
-          SHOW_TOTAL_CODE_TIME: false
-          # Сколько человек просмотрело меня
-          SHOW_PROFILE_VIEWS: false
-          # OS которую использовал
-          SHOW_OS: false
-          # Проекты которые делал
-          SHOW_PROJECTS: true
-          # Место где кодил
-          SHOW_TIMEZONE: false
-          # Ide где кодил
-          SHOW_SHOW_EDITORS: false
-          # Языки которые использовал в проектах
-          SHOW_LANGUAGE_PER_REPO: true
-          # Некоторая инфа
-          SHOW_SHORT_INFO: false
-          # Графа с данными кодинга
-          DEBUG_LOGGING: false
+          # # Время кодинга (badge)
+          # SHOW_TOTAL_CODE_TIME: false
+          # # Сколько человек просмотрело меня
+          # SHOW_PROFILE_VIEWS: false
+          # # OS которую использовал
+          # SHOW_OS: false
+          # # Проекты которые делал
+          # SHOW_PROJECTS: true
+          # # Место где кодил
+          # SHOW_TIMEZONE: false
+          # # Ide где кодил
+          # SHOW_SHOW_EDITORS: false
+          # # Языки которые использовал в проектах
+          # SHOW_LANGUAGE_PER_REPO: true
+          # # Некоторая инфа
+          # SHOW_SHORT_INFO: false
+          # # Графа с данными кодинга
+          # DEBUG_LOGGING: false
