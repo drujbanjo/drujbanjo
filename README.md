@@ -76,8 +76,6 @@ Ruby                     1 repo              ███░░░░░░░░�
  Last Updated on 04/07/2025 13:38:33 UTC
 <!--END_SECTION:waka-->
 
-![Metrics](https://raw.githubusercontent.com/drujbanjo/drujbanjo/main/github-metrics.svg)
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="output/github-contribution-grid-snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="output/github-contribution-grid-snake.svg" />
