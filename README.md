@@ -9,6 +9,13 @@
   <img alt="github-snake" src="github-snake.svg" />
 </picture>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
+  <img alt="github-snake" src="github-snake.svg" />
+</picture>
+
 ![GitHub Snake Light](https://raw.githubusercontent.com/drujbanjo/drujbanjo/output/github-contribution-grid-snake.svg)
 
 ![GitHub Snake Dark](https://raw.githubusercontent.com/drujbanjo/drujbanjo/output/github-contribution-grid-snake-dark.svg?palette=github-dark)
+![GitHub Snake Dark]([https://raw.githubusercontent.com/drujbanjo/drujbanjo/output/github-contribution-grid-snake-dark.svg?palette=github-dark](https://github.com/drujbanjo/drujbanjo/blob/main/output/github-contribution-grid-snake-dark.svg))
