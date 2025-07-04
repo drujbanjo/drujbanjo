@@ -45,14 +45,6 @@ SCSS                     1 repo              ███░░░░░░░░�
 Ruby                     1 repo              ███░░░░░░░░░░░░░░░░░░░░░░   12.50 % 
 ```
 
-
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/drujbanjo/drujbanjo/main/assets/bar_graph.png)
-
-
- Last Updated on 04/07/2025 14:55:44 UTC
 <!--END_SECTION:waka-->
 
 <picture>
