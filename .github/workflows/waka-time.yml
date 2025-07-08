@@ -22,7 +22,7 @@ jobs:
           # OS которую использовал
           SHOW_OS: false
           # Проекты которые делал
-          SHOW_PROJECTS: true
+          SHOW_PROJECTS: false
           # Место где кодил
           SHOW_TIMEZONE: false
           # Ide где кодил
