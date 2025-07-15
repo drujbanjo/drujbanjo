@@ -4,8 +4,6 @@
 - Work with `TypeScript` and `Next.js`
 - I love **Coding** `</>`
 
-Now I am learning `Apollo client` and `GraphQL`
-
 **My stack**
 <p align="left">
     <img src="https://go-skill-icons.vercel.app/api/icons?i=ts" width="60" alt="TYPESCRIPT"/>
