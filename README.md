@@ -4,7 +4,7 @@
 - Work with `TypeScript` and `Next.js`
 - I love **Coding** `</>`
 
-Now, I am configuring Nvim and learning how to use it.
+Now, I am configuring `Nvim` and learning how to use it.
 
 **My stack**
 <p align="left">
