@@ -8,8 +8,6 @@ Now, I am learning `python`
 
 **Languages**
 <p align="left">
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=html" width="60" alt="Html" />
-    <img src="https://go-skill-icons.vercel.app/api/icons?i=css" width="60" alt="CSS" />
     <img src="https://go-skill-icons.vercel.app/api/icons?i=scss" width="60" alt="SCSS" />
     <img src="https://go-skill-icons.vercel.app/api/icons?i=js" width="60" alt="JavaScript" />
     <img src="https://go-skill-icons.vercel.app/api/icons?i=ts" width="60" alt="TypeScript"/>
